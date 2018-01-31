@@ -7,19 +7,24 @@ class StringCalculatorTest extends StringCalculator{
     @Test
     void addEmptyStringTest() {
         String testString = "";
-        int sum = Add(testString);
-        assertEquals(0,sum, "Fail. Add did not return 0 for numbempty string");
+        int returned = Add(testString);
+        assertEquals(0,returned, "Fail. Add did not return 0 for numbempty string");
     }
 
     @Test
     void addOneNumber(){
-
-
+        String testString1 = "1";
+        int returned = Add(testString1);
+        assertEquals(1,returned,"One number fail.");
     }
 
     @Test
-    void addTwoSmallNumbers(){
+    void addSmallNumbers(){
 
+
+    }
+    @Test
+    void addLargeNumbers(){
 
     }
 }
