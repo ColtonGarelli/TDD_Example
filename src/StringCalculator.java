@@ -9,13 +9,13 @@ public class StringCalculator implements StringCalculatorInterface{
             return number;
         }
         else{
-
-
+            String number1 = String.valueOf(numbers.charAt(0));
+            int firstNumber = Integer.parseInt(number1);
+            String number2 = String.valueOf(numbers.charAt(3));
+            int secondNumber = Integer.parseInt(number2);
+            int sum = firstNumber+secondNumber;
         }
-        int sum = 0;
-
-        return sum;
-
+        return 0;
     }
 }
     
