@@ -12,7 +12,7 @@ class StringCalculatorTest extends StringCalculator{
     }
 
     @Test
-    void addOneNumberTest(){
+    public void addOneNumberTest(){
         String testString1 = "1";
         int returned = Add(testString1);
         assertEquals(1,returned,"One number fail.");
@@ -22,7 +22,7 @@ class StringCalculatorTest extends StringCalculator{
     }
 
     @Test
-    void addSmallNumbersTest(){
+    public void addSmallNumbersTest(){
         String testString = "4,2";
         int returned = Add(testString);
         assertEquals(6,returned,"Add failed to add two small numbers");
@@ -31,7 +31,22 @@ class StringCalculatorTest extends StringCalculator{
         assertEquals(8,returned,"Add failed to add 8 and 0");
     }
     @Test
-    void addLargeNumbersTest(){
+    public void addLargeNumbersTest(){
+        String testString1 = "3039,23412";
+        int returned = Add(testString1);
+        assertEquals(3039+23412, returned, "Add failed to add two large numbers");
+
+        String testString2 = "5321,0";
+        returned = Add(testString1);
+        assertEquals(5321, returned, "Add failed to add a large number and 0");
+
+        String testString3 = "9693,24";
+        returned = Add(testString1);
+        assertEquals(9693+24, returned, "Add failed to add a large number with a small number");
+
+
+
 
     }
+
 }
