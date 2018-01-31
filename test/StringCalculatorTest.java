@@ -12,19 +12,19 @@ class StringCalculatorTest extends StringCalculator{
     }
 
     @Test
-    void addOneNumber(){
+    void addOneNumberTest(){
         String testString1 = "1";
         int returned = Add(testString1);
         assertEquals(1,returned,"One number fail.");
     }
 
     @Test
-    void addSmallNumbers(){
+    void addSmallNumbersTest(){
 
 
     }
     @Test
-    void addLargeNumbers(){
+    void addLargeNumbersTest(){
 
     }
 }
