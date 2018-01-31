@@ -9,9 +9,9 @@ public class StringCalculator implements StringCalculatorInterface{
             return number;
         }
         else{
-            String number1 = String.valueOf(numbers.charAt(0));
+            String number1 = String.valueOf(numbers.substring(0,(numbers.indexOf(",")-1)));
             int firstNumber = Integer.parseInt(number1);
-            String number2 = String.valueOf(numbers.charAt(3));
+            String number2 = String.valueOf(numbers.substring(3));
             int secondNumber = Integer.parseInt(number2);
             int sum = firstNumber+secondNumber;
         }
