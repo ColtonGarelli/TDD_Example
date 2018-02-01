@@ -38,11 +38,11 @@ class StringCalculatorTest extends StringCalculator{
         assertEquals(3039+23412, returned, "Add failed to add two large numbers");
 
         String testString2 = "5321,0";
-        returned = Add(testString1);
+        returned = Add(testString2);
         assertEquals(5321, returned, "Add failed to add a large number and 0");
 
         String testString3 = "9693,24";
-        returned = Add(testString1);
+        returned = Add(testString3);
         assertEquals(9693+24, returned, "Add failed to add a large number with a small number");
 
     }
@@ -52,7 +52,7 @@ class StringCalculatorTest extends StringCalculator{
 
         assertEquals( -1, Add("3,-2,4,0,-6"), "Add fails on ");
         assertEquals(0,Add("0,0,0,0"));
-        assertEquals("11", Add("2,6,3"));
+        assertEquals(11, Add("2,6,3"));
         String testString = "45,3,423,234,3";
         int returned = Add(testString);
         assertEquals(708, returned, "Add failed to add multiple  integers");
