@@ -49,10 +49,14 @@ class StringCalculatorTest extends StringCalculator{
 
     @Test
     public void addAnyNumbersTest(){
+
+        assertEquals( -1, Add("3,-2,4,0,-6"), "Add fails on ");
+        assertEquals(0,Add("0,0,0,0"));
+        assertEquals("11", Add("2,6,3"));
         String testString = "45,3,423,234,3";
         int returned = Add(testString);
-        assertEquals(708, returned, "Add failed to add multiple integers");
-
+        assertEquals(708, returned, "Add failed to add multiple  integers");
+        assertEquals(5000, Add("500,2500,1000,250,750"), "Add failed on large integers");
     }
 
 }
