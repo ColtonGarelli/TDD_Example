@@ -12,6 +12,7 @@ public class StringCalculator implements StringCalculatorInterface{
         }
         else {
             //Austin's solution
+            //Works for strings (arrays) of any length
             int sum = 0;
             String[] output = numbers.split(",");
             for (int i = 0; i < output.length; i++) {
